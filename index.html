@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill out the form to tell us about yourselves. We don't share your information to any third
+        party.</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" placeholder="Enter name here..." required>
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="" email required placeholder="Enter email here...">
+            </label>
+            <label for="number" id="number-label">Phone
+                <input type="text" id="number" minlength="8" maxlength="10"
+                    pattern="[0-9]{10}" required placeholder="Enter phone number here...">
+            </label>
+            <label for="dropdown">Gender
+                <select name="" id="dropdown" required>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <p>Are you interested in getting our newsletter to your inbox?</p>
+            <label for="news"></label><input type="radio" name="newsletter" id="news" value="1" class="inline" checked required>Yes</label>
+            <label for="news"><input type="radio" name="newsletter" value="2" id="news" class="inline">No</label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label for="textarea">Tell us about yourselves.
+                <textarea placeholder="I love coding..." rows="3" cols="30" name="bio" id="bio"></textarea>
+            </label>
+            <label for="checkbox">
+                <input type="checkbox" value="checkbox" class="inline" required>I agree to Terms and Conditions.
+            </label>
+            <label for="checkbox">
+                <input type="checkbox" value="checkbox" class="inline" required>I am above 18 years of age.
+            </label>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
